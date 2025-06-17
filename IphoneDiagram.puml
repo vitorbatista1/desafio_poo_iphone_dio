@@ -1,0 +1,30 @@
+@startuml
+interface ReprodutorMusical {
+    + tocar()
+    + pausar()
+    + parar()
+    + avancarFaixa()
+}
+
+interface AparelhoTelefonico {
+    + fazerChamada(num)
+    + atender()
+    + desligar()
+}
+
+interface NavegadorInternet {
+    + abrirURL(url)
+    + voltar()
+    + avancar()
+    + atualizar()
+}
+
+class Iphone {
+    - /* atributos privados */
+    + /* métodos das interfaces */
+}
+
+Iphone ..|> ReprodutorMusical
+Iphone ..|> AparelhoTelefonico
+Iphone ..|> NavegadorInternet
+@enduml
